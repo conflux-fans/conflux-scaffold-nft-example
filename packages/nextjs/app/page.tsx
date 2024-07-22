@@ -6,35 +6,46 @@ const Home: NextPage = () => {
     <div className="flex items-center flex-col flex-grow pt-10">
       <div className="px-5 w-[90%] md:w-[75%]">
         <h1 className="text-center mb-6">
-          <span className="block text-2xl mb-2">SpeedRunEthereum</span>
-          <span className="block text-4xl font-bold">Challenge #0: Simple NFT</span>
+          <span className="block text-2xl mb-2">Conflux eSpace NFT Example</span>
+          <span className="block text-4xl font-bold">How to make a simple NFT on Conflux</span>
         </h1>
         <div className="flex flex-col items-center justify-center">
           <Image
             src="/hero.png"
-            width="727"
+            width="400"
             height="231"
-            alt="challenge banner"
+            alt="conflux banner"
             className="rounded-xl border-4 border-primary"
           />
           <div className="max-w-3xl">
+          <hr className="border-t-2 border-gray-300 mt-6 mb-6" />
+          <h2 className="text-xl font-bold mt-2">Objectives</h2>
             <p className="text-center text-lg mt-8">
-              🎫 Create a simple NFT to learn basics of 🏗️ Scaffold-ETH 2. You&apos;ll use 👷‍♀️
-              <a href="https://hardhat.org/getting-started/" target="_blank" rel="noreferrer" className="underline">
+              Create a simple NFT to learn basics of Conflux Scaffold. You'll use 
+              {" "}<a href="https://hardhat.org/getting-started/" target="_blank" rel="noreferrer" className="underline">
                 HardHat
               </a>{" "}
-              to compile and deploy smart contracts. Then, you&apos;ll use a template React app full of important
-              Ethereum components and hooks. Finally, you&apos;ll deploy an NFT to a public network to share with
-              friends! 🚀
+              to compile and deploy smart contracts. Then, you'll use a template React app full of components and hooks. Finally, you'll deploy a NFT to Conflux eSpace testnet to share with friends! 
             </p>
             <p className="text-center text-lg">
-              🌟 The final deliverable is an app that lets users purchase and transfer NFTs. Deploy your contracts to a
-              testnet then build and upload your app to a public web server. Submit the url on{" "}
-              <a href="https://speedrunethereum.com/" target="_blank" rel="noreferrer" className="underline">
-                SpeedRunEthereum.com
-              </a>{" "}
-              !
+              The final deliverable is an app that lets users purchase and transfer NFTs. Deploy your contracts to Conflux
+              testnet then build and upload your app to a public web server. Share the url of your app and feel free to ask any questions on Discord.
+            {" "}
+            <a href="https://discord.gg/confluxnetwork" target="_blank" rel="noreferrer" className="underline">
+                Conflux Discord
+            </a>
+            {" "}
             </p>
+            <hr className="border-t-2 border-gray-300 mt-6 mb-6" />
+            {/* <hr className="border-t-2 border-gray-300 mt-6 mb-6" />
+            <h2 className="text-xl font-bold mt-2">Steps</h2>
+            <b>Step 1:</b> Create a NFT Contract.
+              <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Go to Hardhat</li>
+                <li>Deploy your contract to Conflux eSpace testnet.</li>
+                <li>Deploy the contract to Conflux eSpace testnet by ensuring the configuration is correct</li>
+              </ul>
+            <b>Step 2:</b> Create a NFT Contract. */}
           </div>
         </div>
       </div>

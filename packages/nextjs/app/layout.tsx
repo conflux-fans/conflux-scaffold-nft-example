@@ -9,9 +9,9 @@ const baseUrl = process.env.VERCEL_URL
   : `http://localhost:${process.env.PORT || 3000}`;
 const imageUrl = `${baseUrl}/thumbnail.jpg`;
 
-const title = "Challenge #0 | SpeedRunEthereum";
-const titleTemplate = "%s | SpeedRunEthereum";
-const description = "Built with 🏗 Scaffold-ETH 2";
+const title = "Conflux eSpace NFT Example";
+const titleTemplate = "Mint a NFT and Transfer";
+const description = "Built with Conflux Scaffold";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),

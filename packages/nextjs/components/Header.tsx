@@ -23,12 +23,12 @@ type HeaderMenuLink = {
 
 export const menuLinks: HeaderMenuLink[] = [
   {
-    label: "My NFTs",
+    label: "My Conflux NFTs",
     href: "/myNFTs",
     icon: <PhotoIcon className="h-4 w-4" />,
   },
   {
-    label: "Transfers",
+    label: "Transfer to an Address",
     href: "/transfers",
     icon: <ArrowPathIcon className="h-4 w-4" />,
   },
@@ -116,8 +116,8 @@ export const Header = () => {
             <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">SRE Challenges</span>
-            <span className="text-xs">#0: Simple NFT</span>
+            <span className="font-bold leading-tight">Conflux NFT</span>
+            <span className="text-xs">Mint NFT on Conflux</span>
           </div>
         </Link>
         <ul className="hidden xl:flex xl:flex-nowrap menu menu-horizontal px-1 gap-2">

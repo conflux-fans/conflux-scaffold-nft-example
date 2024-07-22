@@ -1,39 +1,25 @@
-# 🚩 Challenge #0: 🎟 Simple NFT Example
+# 🚩 How to do a simple NFT on Conflux
 
-![readme-0](https://github.com/scaffold-eth/se-2-challenges/assets/80153681/375b7797-6839-43cd-abe5-fca94d88e300)
-
-📚 This tutorial is meant for developers that already understand the [ 🖍️ basics ](https://www.youtube.com/watch?v=MlJPjJQZtC8). 
-
-🧑‍🏫 If you would like a more gentle introduction for developers, watch our 15 video [🎥 Web2 to Web3](https://www.youtube.com/playlist?list=PLJz1HruEnenAf80uOfDwBPqaliJkjKg69) series.
+📚 This tutorial is adapted from ETH Scaffold 2 for the purposes of deploying simple NFTs on Conflux
 
 ---
 
-🎫 Create a simple NFT:
+🎫 Create a simple NFT on Conflux:
 
 👷‍♀️ You'll compile and deploy your first smart contracts. Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to a public network to share with friends! 🚀
 
-🌟 The final deliverable is an app that lets users purchase and transfer NFTs. Deploy your contracts to a testnet, then build and upload your app to a public web server. Submit the url on [SpeedRunEthereum.com](https://speedrunethereum.com)!
+🌟 The final deliverable is an app that lets users purchase and transfer NFTs. Deploy your contracts to a testnet, then build and upload your app to a public web server. Share your experience and your work on Discord with other Conflux builders.
 
-💬 Meet other builders working on this challenge and get help in the [Challenge 0 Telegram](https://t.me/+Y2vqXZZ_pEFhMGMx)!
-
-🤖 If you have any question during your Challenge, you can try out the [Challenge AI assistant](https://scaffold-eth-assistant.streamlit.app/), and get answers to your Challenge/Scaffold-ETH questions. Please reach us in Telegram if something feels wrong!
-
-## Checkpoint 0: 📦 Environment 📚
-
-Before you begin, you need to install the following tools:
-
-- [Node (>= v18.17)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
-
-Then download the challenge to your computer and install dependencies by running:
+## Steps:
 
 ```sh
-git clone https://github.com/scaffold-eth/se-2-challenges.git challenge-0-simple-nft
-cd challenge-0-simple-nft
-git checkout challenge-0-simple-nft
+git clone https://github.com/intrepidcanadian/conflux-scaffold-nft-example
 yarn install
 ```
+
+- This clones the repo of eth scaffold 2 is adapted similarly to conflux-scaffold. The difference is now that the contract in packages/hardhat/contracts contains a file called "YourCollectible.sol". This solidity file contains the code of the NFT contract we are about to deploy.
+
+The frontend in packages/nextjs/app contains the code for the frontend of the NFT which allow users to mint NFTs and transfer them to other users.
 
 > in the same terminal, start your local network (a local instance of a blockchain):
 
@@ -44,14 +30,14 @@ yarn chain
 > in a second terminal window, 🛰 deploy your contract (locally):
 
 ```sh
-cd challenge-0-simple-nft
+cd conflux-scaffold-nft-example
 yarn deploy
 ```
 
 > in a third terminal window, start your 📱 frontend:
 
 ```sh
-cd challenge-0-simple-nft
+cd conflux-scaffold-nft-example
 yarn start
 ```
 
@@ -59,30 +45,7 @@ yarn start
 
 ---
 
-## Checkpoint 1: ⛽️ Gas & Wallets 👛
-
-> ⛽️ You'll need to get some funds from the faucet for gas.
-
-![gas&wallet](https://github.com/scaffold-eth/se-2-challenges/assets/80153681/912d0d4b-db34-49d3-bd7d-7ca0ab18eb66)
-
-> 🦊 At first, **don't** connect MetaMask. If you are already connected, click **Disconnect**:
-
-<p>
-  <img src="https://github.com/scaffold-eth/se-2-challenges/assets/80153681/2c7a1e40-50ad-4c20-ba3e-a56eff4b892b" width="33%" />
-  <img src="https://github.com/scaffold-eth/se-2-challenges/assets/80153681/1bcf9752-e8ae-4db6-a0a6-5dc774abe46c" width="33%" />
-</p>
-
-> 🔥 We'll use burner wallets on localhost.
-
-> 👛 Explore how burner wallets work in 🏗 Scaffold-ETH 2 by opening a new incognito window and navigate to http://localhost:3000. You'll notice it has a new wallet address in the top right. Copy the incognito browser's address and send localhost test funds to it from your first browser (using the **Faucet** button in the bottom left):
-
-![icognito&webBrowser](https://github.com/scaffold-eth/se-2-challenges/assets/80153681/fd191447-a31f-4c03-a36f-936bfb70c2a1)
-
-> 👨🏻‍🚒 When you close the incognito window, the account is gone forever. Burner wallets are great for local development but you'll move to more permanent wallets when you interact with public networks.
-
----
-
-## Checkpoint 2: 🖨 Minting
+## Create your NFT
 
 > ✏️ Mint some NFTs! Click the **MINT NFT** button in the `My NFTs` tab.
 
