@@ -6,7 +6,7 @@ A video of this tutorial can be found [here](https://www.youtube.com/watch?v=sj2
 
 By the end of this tutorial, you will have been able to mint NFTs and send them to other users.
 
-![image](https://github.com/intrepidcanadian/conflux-scaffold-nft-example/packages/nextjs/public/Home.png)
+![image](https://raw.githubusercontent.com/intrepidcanadian/conflux-scaffold-nft-example/challenge-0-simple-nft/packages/nextjs/public/Home.png)
 
 ---
 
@@ -61,7 +61,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the app.
 
 > Mint some NFTs! Click the **MINT NFT** button in the `My NFTs` tab.
 
-![image](https://github.com/intrepidcanadian/conflux-scaffold-nft-example/packages/nextjs/public/NFTExample.png)
+![image](https://raw.githubusercontent.com/intrepidcanadian/conflux-scaffold-nft-example/challenge-0-simple-nft/packages/nextjs/public/NFTExample.png)
 
 Transfer an NFT to anther address using the UI and switch to the address to see if it was transferred.
 
