@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.2; //Do not change the solidity version as it negatively impacts submission grading
+pragma solidity ^0.8.2;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract YourCollectible is
+contract ConfluxNFT is
 	ERC721,
 	ERC721Enumerable,
 	ERC721URIStorage,
@@ -17,7 +17,7 @@ contract YourCollectible is
 
 	Counters.Counter public tokenIdCounter;
 
-	constructor() ERC721("YourCollectible", "YCB") {}
+	constructor() ERC721("ConfluxNFT", "ConFi") {}
 
 	function _baseURI() internal pure override returns (string memory) {
 		return "https://ipfs.io/ipfs/";

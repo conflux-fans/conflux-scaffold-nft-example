@@ -37,15 +37,6 @@ const Home: NextPage = () => {
             {" "}
             </p>
             <hr className="border-t-2 border-gray-300 mt-6 mb-6" />
-            {/* <hr className="border-t-2 border-gray-300 mt-6 mb-6" />
-            <h2 className="text-xl font-bold mt-2">Steps</h2>
-            <b>Step 1:</b> Create a NFT Contract.
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-                <li>Go to Hardhat</li>
-                <li>Deploy your contract to Conflux eSpace testnet.</li>
-                <li>Deploy the contract to Conflux eSpace testnet by ensuring the configuration is correct</li>
-              </ul>
-            <b>Step 2:</b> Create a NFT Contract. */}
           </div>
         </div>
       </div>

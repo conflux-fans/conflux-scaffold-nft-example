@@ -6,13 +6,15 @@ import { useScaffoldWriteContract } from "~~/hooks/scaffold-eth";
 export const NFTCard = ({ nft }: { nft: Collectible }) => {
   const [transferToAddress, setTransferToAddress] = useState("");
 
-  const { writeContractAsync } = useScaffoldWriteContract("YourCollectible");
+  // here you can change your contract name to match the deployed contract on Conflux
+  // this is for transferring the NFT to another address
+  const { writeContractAsync } = useScaffoldWriteContract("ConfluxNFT");
 
   return (
     <div className="card card-compact bg-base-100 shadow-lg w-[300px] shadow-secondary">
       <figure className="relative">
         {/* eslint-disable-next-line  */}
-        <img src={nft.image} alt="NFT Image" className="h-60 min-w-full" />
+        <img src={nft.image} alt="NFT Image" className="h-60 p-5" />
         <figcaption className="glass absolute bottom-4 left-4 p-4 w-25 rounded-xl">
           <span className="text-white "># {nft.id}</span>
         </figcaption>

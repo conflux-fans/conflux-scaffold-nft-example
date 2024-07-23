@@ -29,7 +29,7 @@ export async function getNFTMetadataFromIPFS(ipfsHash: string) {
       return jsonObject;
     } catch (error) {
       console.log("Error parsing JSON:", error);
-      return undefined;
+      return undefined; 
     }
   }
 }

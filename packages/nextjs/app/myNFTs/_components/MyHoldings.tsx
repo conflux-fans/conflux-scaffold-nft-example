@@ -19,12 +19,14 @@ export const MyHoldings = () => {
   const [myAllCollectibles, setMyAllCollectibles] = useState<Collectible[]>([]);
   const [allCollectiblesLoading, setAllCollectiblesLoading] = useState(false);
 
+  // here you can change your contract name to match the deployed contract on Conflux
+  // this is for displaying the NFTs you own
   const { data: yourCollectibleContract } = useScaffoldContract({
-    contractName: "YourCollectible",
+    contractName: "ConfluxNFT",
   });
 
   const { data: myTotalBalance } = useScaffoldReadContract({
-    contractName: "YourCollectible",
+    contractName: "ConfluxNFT",
     functionName: "balanceOf",
     args: [connectedAddress],
     watch: true,

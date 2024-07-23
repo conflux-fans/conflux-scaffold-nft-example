@@ -12,10 +12,11 @@ import nftsMetadata from "~~/utils/simpleNFT/nftsMetadata";
 const MyNFTs: NextPage = () => {
   const { address: connectedAddress, isConnected, isConnecting } = useAccount();
 
-  const { writeContractAsync } = useScaffoldWriteContract("YourCollectible");
+  // here you can change your contract name to match the deployed contract on Conflux
+  const { writeContractAsync } = useScaffoldWriteContract("ConfluxNFT");
 
   const { data: tokenIdCounter } = useScaffoldReadContract({
-    contractName: "YourCollectible",
+    contractName: "ConfluxNFT",
     functionName: "tokenIdCounter",
     watch: true,
   });

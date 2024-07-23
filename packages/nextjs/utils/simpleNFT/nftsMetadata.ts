@@ -1,121 +1,61 @@
 const nftsMetadata = [
   {
-    description: "It's actually a bison?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/buffalo.jpg",
-    name: "Buffalo",
+    description: "I am ConFi! I love Conflux!",
+    external_url: "https://github.com/Conflux-Chain/conflux-design-assets/tree/main/ConFi_Mascot/PNG", // <-- this can link to a page for the specific file too
+    image: "https://raw.githubusercontent.com/Conflux-Chain/conflux-design-assets/main/ConFi_Mascot/PNG/Conflux_Maskot_T-Shirt.png",
+    name: "ConFi Mascot with T-Shirt",
     attributes: [
       {
         trait_type: "BackgroundColor",
-        value: "green",
+        value: "white",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 42,
-      },
-    ],
-  },
-  {
-    description: "What is it so worried about?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/zebra.jpg",
-    name: "Zebra",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
-        value: "blue",
-      },
-      {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 38,
-      },
-    ],
-  },
-  {
-    description: "What a horn!",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/rhino.jpg",
-    name: "Rhino",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
-        value: "pink",
-      },
-      {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 22,
-      },
-    ],
-  },
-  {
-    description: "Is that an underbyte?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/fish.jpg",
-    name: "Fish",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
-        value: "blue",
-      },
-      {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
-        trait_type: "Stamina",
-        value: 15,
-      },
-    ],
-  },
-  {
-    description: "So delicate.",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/flamingo.jpg",
-    name: "Flamingo",
-    attributes: [
-      {
-        trait_type: "BackgroundColor",
+        trait_type: "T-Shirt",
         value: "black",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
-      },
-      {
         trait_type: "Stamina",
-        value: 6,
+        value: 80,
       },
     ],
   },
   {
-    description: "Raaaar!",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/godzilla.jpg",
-    name: "Godzilla",
+    description: "Too hot for a T-Shirt!",
+    external_url: "https://github.com/Conflux-Chain/conflux-design-assets/tree/main/ConFi_Mascot/PNG", // <-- this can link to a page for the specific file too
+    image: "https://raw.githubusercontent.com/Conflux-Chain/conflux-design-assets/main/ConFi_Mascot/PNG/Conflux_Maskot.png",
+    name: "ConFi Mascot without T-Shirt",
     attributes: [
       {
         trait_type: "BackgroundColor",
-        value: "orange",
+        value: "white",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "T-Shirt",
+        value: "none",
       },
       {
         trait_type: "Stamina",
-        value: 99,
+        value: 60,
+      },
+    ],
+  },
+  {
+    description: "Eyes on the prize!",
+    external_url: "https://github.com/Conflux-Chain/conflux-design-assets/tree/main/ConFi_Mascot/PNG", // <-- this can link to a page for the specific file too
+    image: "https://raw.githubusercontent.com/Conflux-Chain/conflux-design-assets/main/ConFi_Mascot/PNG/Conflux_Maskot_Head.png",
+    name: "ConFi Mascot Head",
+    attributes: [
+      {
+        trait_type: "BackgroundColor",
+        value: "white",
+      },
+      {
+        trait_type: "head",
+        value: "only",
+      },
+      {
+        trait_type: "Stamina",
+        value: 40,
       },
     ],
   },
