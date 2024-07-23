@@ -10,7 +10,7 @@ export type ScaffoldConfig = {
 
 const scaffoldConfig = {
   // The networks on which your DApp is live
-  targetNetworks: [chains.confluxESpace, chains.confluxESpaceTestnet],
+  targetNetworks: [chains.hardhat, chains.confluxESpace, chains.confluxESpaceTestnet],
 
   // , 
 
