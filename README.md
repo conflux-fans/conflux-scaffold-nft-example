@@ -38,6 +38,12 @@ To deploy on a testnet, similar to the first tutorial, you just need to specify 
 npx hardhat deploy --network confluxESpaceTestnet
 ```
 
+To verify the contract on the Conflux testnet, simply run the following command with the Contract Address. If there were any constructors, you will need to pass them in as well after the contract address.
+
+```sh
+npx hardhat verify --network confluxESpaceTestnet [Contract Address] 
+```     
+
 If you recall, there are two main folders in the repo. The hardhat file is used for compiling and deploying the contract. The frontend is used for displaying the Conflux Scaffold Debugger and has pre-built frontend for minting NFTs and transferring them.
 
 > in a new terminal, start your local network (a local instance of a blockchain):

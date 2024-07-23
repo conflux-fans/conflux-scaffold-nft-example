@@ -129,7 +129,19 @@ const config: HardhatUserConfig = {
   },
   // configuration for harhdat-verify plugin
   etherscan: {
-    apiKey: `${etherscanApiKey}`,
+    apiKey: {
+      espaceTestnet: 'espace',
+    },
+    customChains: [
+      {
+        network: 'espaceTestnet',
+        chainId: 71,
+        urls: {
+          apiURL: 'https://evmapi-testnet.confluxscan.io/api/',
+          browserURL: 'https://evmtestnet.confluxscan.io/',
+        },
+      },
+    ],
   },
   // configuration for etherscan-verify from hardhat-deploy plugin
   verify: {

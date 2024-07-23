@@ -31,11 +31,15 @@ export const RPC_CHAIN_NAMES: Record<number, string> = {
   [chains.base.id]: "base-mainnet",
   [chains.baseGoerli.id]: "base-goerli",
   [chains.baseSepolia.id]: "base-sepolia",
+  [chains.confluxESpaceTestnet.id]: "evmtestnet",
+  [chains.confluxESpace.id]: "evm",
 };
 
 export const getAlchemyHttpUrl = (chainId: number) => {
   return RPC_CHAIN_NAMES[chainId]
-    ? `https://${RPC_CHAIN_NAMES[chainId]}.g.alchemy.com/v2/${scaffoldConfig.alchemyApiKey}`
+     // for other chains non-Conflux, this RPC url works for alchemy
+    // ? `https://${RPC_CHAIN_NAMES[chainId]}.g.alchemy.com/v2/${scaffoldConfig.alchemyApiKey}`
+    ? `https://${RPC_CHAIN_NAMES[chainId]}.confluxrpc.org/2QFea3766NuMd6zDSgfj3obbZy77HdMLAR7L83n1X3vzuJqFbLENYrGJ6G7wV8NvSumLMmCXjcBcksKiSqXwpwDNB`
     : undefined;
 };
 
@@ -80,6 +84,12 @@ export const NETWORKS_EXTRA_DATA: Record<string, ChainAttributes> = {
   },
   [chains.scrollSepolia.id]: {
     color: "#fbebd4",
+  },
+  [chains.confluxESpaceTestnet.id]: {
+    color: "#35a7ff",
+  },
+  [chains.confluxESpace.id]: {
+    color: "#00b0ff",
   },
 };
 
